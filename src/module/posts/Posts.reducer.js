@@ -4,7 +4,7 @@ const initialState = {
     error: null
 }
 
-export default (state = initialState, {type, payload}) => {
+const postReducer =  (state = initialState, {type, payload}) => {
 
     switch (type){
         case "DEPOSIT":
@@ -21,3 +21,5 @@ export default (state = initialState, {type, payload}) => {
             return state
     }
 }
+
+export default postReducer;
